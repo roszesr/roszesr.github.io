@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portofolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Contact</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Hubungi Saya</h1>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <section>
-        <h2>Hubungi Saya</h2>
-        <form action="#" method="post">
-            <label for="name">Nama:</label>
-            <input type="text" id="name" name="name" required>
+  <section class="contact reveal">
+    <h2>Form</h2>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-            <label for="message">Pesan:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
+      <button type="submit">Kirim</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Audia Endondaya Kalambia. All rights reserved.</p>
-    </footer>
+  <button id="backToTop">↑ Top</button>
+
+  <footer>
+    <p>&copy; 2025 Portofolio Audia Endondaya Kalambia. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
